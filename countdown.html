@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTDOWN</title>
+    <link rel="stylesheet" href="countdown.css">
+    <script src="countdown.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="section1">
+            <h1>Countdown Timer</h1>
+        </section>
+        <section class="section2">
+            <div id="content">
+                <div id="upper_uniqe_msg">
+                    <div id="direction1">Plsease set all Non-negative value</div>
+                    <div id="direction2">Please set your time</div>
+                    <div id="timer_on">Timer On</div>
+                    <div id="time_over">Please reset, Set your time again</div>
+                </div>
+                <form action="python.py">
+                    <div id="timeup_message">Time Up</div>
+                    <div id="span_container">
+                        <span>Day</span><span>Hour</span><span>Minute</span><span>Second</span>
+                    </div>
+                    <div id="form_content">
+                        <input type="number" value="00" id="day" class="number"><span>:</span>
+                        <input type="number" value="00" id="hour" class="number"><span>:</span>
+                        <input type="number" value="00" id="minute" class="number"><span>:</span>
+                        <input type="number" value="00" id="second" class="number">
+                    </div>
+                </form>
+            </div>
+            <div id="button">
+                <button id="btn1" class="btn" onclick="start_timer()">Start</button>
+                <button id="btn2" class="btn" onclick="reset_timer()">Reset</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
